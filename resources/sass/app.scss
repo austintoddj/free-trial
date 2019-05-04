@@ -1,3 +1,4 @@
+
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
@@ -7,7 +8,21 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-.navbar-laravel {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 1.5em;
+    width: 1.5em;
+    background-image: url(../img/checkmark-lined.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 3em;
+    margin-right: 1em;
+  }
 }

@@ -25,19 +25,16 @@ class VerificationController extends Controller
             if ($user_emails->contains($request->email)) {
                 return response()->json([
                     'message' => 'Email already exists',
-                    'code'    => 403,
-                ]);
+                ], 422);
             } else {
                 return response()->json([
                     'message' => 'Success',
-                    'code'    => 200,
-                ]);
+                ], 200);
             }
         } else {
             return response()->json([
                 'message' => 'Invalid email address',
-                'code'    => 400,
-            ]);
+            ], 400);
         }
     }
 

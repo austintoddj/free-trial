@@ -41,10 +41,10 @@ class VerificationController extends Controller
     /**
      * Perform a simple validation for email addresses.
      *
-     * @param string $email
+     * @param null $email
      * @return bool
      */
-    private function isValid(string $email): bool
+    private function isValid($email = null): bool
     {
         return filter_var($email, FILTER_VALIDATE_EMAIL);
     }

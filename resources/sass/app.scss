@@ -1,6 +1,9 @@
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Playfair+Display');
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
 
 // Variables
 @import 'variables';
@@ -8,21 +11,41 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-ul {
-  list-style: none;
-  padding-left: 0;
+body {
+  border-top: 5px solid $brand-purple;
+  color: dimgray;
+  padding-bottom: 5em;
 }
 
-li {
-  &:before {
-    content: '';
-    display: inline-block;
-    height: 1.5em;
-    width: 1.5em;
-    background-image: url(../img/checkmark-lined.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 3em;
-    margin-right: 1em;
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: $promo;
+}
+
+.btn-outline-secondary {
+  border-color: rgb(206, 212, 218);
+}
+
+.dropdown-toggle::after {
+  color: $primary;
+}
+
+#blob {
+  width: 20em;
+  position: absolute;
+  left: 17em;
+  top: 42em;
+}
+
+#halftone {
+  width: 15em;
+  position: absolute;
+  top: 26em;
+  left: 54em;
+}
+
+@media (max-width: 768px) {
+  #blob, #halftone, nav {
+    display: none !important;
   }
 }

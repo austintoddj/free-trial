@@ -6,7 +6,7 @@
 ### Database Schema
 
 Data for this application is stored in one of the two base Laravel migration tables:
-- users
+- `users`
     - id (bigInteger|unsigned|autoIncrement)
     - name (string)
     - email (string|unique)
@@ -17,7 +17,7 @@ Data for this application is stored in one of the two base Laravel migration tab
     - updated_at (timestamp|nullable)
     
 
-- password_resets
+- `password_resets`
     - email (string)
     - token (string)
     - created_at (timestamp|nullable)

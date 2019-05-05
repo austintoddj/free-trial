@@ -2,14 +2,16 @@
 $body-bg: #fffff;
 
 // Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
+$fa-font-path: "../fonts" !default;
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-serif: 'Playfair Display', serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
 // Colors
 $blue: #3490dc;
 $indigo: #6574cd;
-$purple: #9561e2;
+$purple: #6f42c1;
 $pink: #f66d9b;
 $red: #e3342f;
 $orange: #f6993f;
@@ -19,4 +21,6 @@ $teal: #4dc0b5;
 $cyan: #6cb2eb;
 
 // Branding
-$primary: rgb(240,88,100)
+$primary: #F57077;
+$promo: rgb(20,20,64);
+$brand-purple: rgb(66,78,157);

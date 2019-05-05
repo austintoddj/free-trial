@@ -36,7 +36,7 @@ The endpoint performs a simple validation to ensure we're dealing with a proper 
 
 ### Frontend
 
-There is an `EmailVerification` VueJS component with an accompanying mixin that handles the form submission and page redirect on success.
+There is an `VerifyEmail` VueJS component with an accompanying mixin that handles the form submission and page redirect on success.
 
 The app uses Bootstrap 4 utility classes to style the component. 
 

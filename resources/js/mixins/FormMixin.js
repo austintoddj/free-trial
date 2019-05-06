@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 export default {
-    name: 'VerifyEmail',
 
     data() {
         return {

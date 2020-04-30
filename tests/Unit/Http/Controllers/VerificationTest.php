@@ -2,8 +2,8 @@
 
 namespace Tests\Unit\Http\Controllers;
 
-use Tests\TestCase;
 use App\Http\Controllers\VerificationController;
+use Tests\TestCase;
 
 class VerificationTest extends TestCase
 {
